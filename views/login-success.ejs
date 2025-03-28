@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éxito</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>¡Bienvenido, <%= username %>!</h1>
+        
+        <div class="debug-info">
+            <h3>🔐 Demostración de Cifrado:</h3>
+            <p><strong>Contraseña cifrada en DB:</strong> <%= encryptedPassword %></p>
+            <p><strong>Contraseña descifrada:</strong> <%= decryptedPassword %></p>
+        </div>
+        
+        <div class="link">
+            <a href="/register">Volver al inicio</a>
+        </div>
+    </div>
+</body>
+</html>
